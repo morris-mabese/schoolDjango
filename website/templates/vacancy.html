@@ -1,0 +1,98 @@
+{% extends 'base.html'%}
+{% block content %}
+
+{% load static %}
+        <!-- Page Header End -->
+        <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">Apply for Vacancy</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">vacancy</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Vacancy Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Apply</h1>
+                                {% if name %}
+                                <div class="message">
+                                    <h2 style="align-items: center;"> Thank you {{ name }}</h2>
+                                    <p>We have received your email</p>
+                                </div>
+                                
+                                {% else %}
+                                <form action="{% url 'vacancy' %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="name" placeholder="Enter your Full Name" required>
+                                                <label for="name">Your Full Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Enter Your Email" required>
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="phone" class="form-control border-0" id="phone" placeholder="Enter Your Phone  Number" maxlength="10" required> 
+                                                <label for="email">Your Phone Number</label>
+                                            </div>
+                                        </div><br>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control border-0" id="date" placeholder="Enter YouR Year of graduation" required>
+                                                <label for="date">Year of Graduation</label>
+                                            </div>
+                                        </div><br>
+                                        <div class="col-6">
+                                               <label for="cage">Upload Cover letter</label>
+                                            <div class="form-floating">          
+                                            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"  required/>
+                                            </div>
+                                        </div><br>
+                                        <div class="col-6">
+                                               <label for="cage">Upload CV</label>
+                                            <div class="form-floating">          
+                                            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required/>
+                                            </div>
+                                        </div>
+                                         <div class="col-6">
+                                               <label for="cage">Upload TSC Number</label>
+                                            <div class="form-floating">          
+                                            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"  required/>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-success w-100 py-3" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 300px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="{% static 'website/img/jobs1.jpg'%}" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+{% endif %}
+        <!-- Appointment End -->
+{% endblock%}

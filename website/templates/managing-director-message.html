@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+{% block content %}
+
+{% load static %}
+ <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">MD's Message</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a  href="{%url 'home'%}">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Managing Directos's Message</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="{% static 'website/img/sta5.jpg'%}" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Manager's Message</h1>
+                                <p class="mb-2">Welcome to Stanthony’s Little Angels Education Centre. This website provides parents, learners, and our school community with essential information about our programs, policies, activities, and admissions.
+                                    Stanthony’s Little Angels is a nurturing learning environment where every child is valued. Our dedicated teachers use creative, innovative approaches, including STEAM activities and technology, to support each learner’s growth and development.
+                                   <p>Our goal is to help every child reach their full potential and become a confident, lifelong learner. We value strong partnerships with parents in shaping responsible and compassionate future leaders.</p> 
+                                    For more details, please explore the resources on this website or contact us directly.</p>
+                                    Warm regards,
+                                    <p><strong>Mrs. Antonina Onyango</strong></p>
+                                    <p>Managing Director
+                                    Stanthony’s Little Angels Education Centre.
+                                </p>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+ {% endblock %}
+ 

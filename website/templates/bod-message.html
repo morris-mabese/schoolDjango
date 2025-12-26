@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% block content %}
+
+{% load static %}
+ <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">BoD's Chairman Message</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a  href="{%url 'home'%}">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Managing Directos's Message</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="{% static 'website/img/bodchair.jpg'%}" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Manager's Message</h1>
+                              <p>On behalf of the Board of Directors, I warmly welcome you to St. Anthony’s Little Angels Education Centre. Our school was founded with a clear vision: to provide quality, holistic education that nurtures young learners academically, morally, socially, and spiritually. Over the years, St. Anthony’s Little Angels has grown into a trusted institution committed to excellence, discipline, and strong values that prepare children for both school and life.
+                                <p>The Board remains fully dedicated to supporting the management, staff, and parents in creating a safe, caring, and stimulating learning environment. We continually invest in qualified teachers, appropriate learning resources, and facilities that enhance the educational experience of our pupils. We are proud of the progress the school has made and the achievements recorded, which reflect teamwork, dedication, and God’s guidance.</p>
+                                <p>As we look to the future, we remain committed to upholding high standards, embracing innovation in education, and strengthening our partnership with parents and the community. Together, we will continue to nurture confident, responsible, and well-rounded learners who will grow to make positive contributions to society.</p>
+
+                                
+                                    <p><strong>Mr. Tom Alila</strong></p>
+                                    <p>Chairman, Board of Directors Stanthony’s Little Angels Education Centre.
+                                </p>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+ {% endblock %}
+ 

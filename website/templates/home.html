@@ -1,0 +1,74 @@
+{% extends 'base.html'%}
+{% block content %}
+{% load static %}
+        <!--slides show starts-->
+        
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="{% static 'website/img/sta2.jpg'%}" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kindergarten School For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                    <a href="" class="btn btn-success rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="" class="btn btn-success rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="{% static 'website/img/sta6.jpg'%}" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                    <a href="" class="btn btn-success rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="" class="btn btn-success rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->   
+       <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 300px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="{% static 'website/img/sta3.jpg'%}" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Why Choose Us</h1>
+                                <p class="mb-4">At St. Anthony’s Little Angels Education Centre, we believe that every child is a unique gift full of potential, curiosity, and promise.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Our Ethos</h3>
+                    <hr>
+                    <h5>Holistic Early Childhood Education</h5>
+                        <p>We follow a balanced curriculum that integrates academic readiness, creativity, and character development. Our approach ensures that children not only learn essential skills—such as literacy, numeracy, and critical thinking—but also develop confidence, empathy, and independence.</p>
+                         <h5>Safe, Caring, and Child-Friendly Environment</h5>
+                    <p>Your child’s safety and well-being come first. Our classrooms are designed to be warm, engaging, and age-appropriate, while our teachers provide consistent care, supervision, and emotional support. We strive to create a home-like atmosphere where every child feels included, respected, and loved.</p>
+                    <h5>Qualified and Passionate Teachers</h5>
+                    <p>We pride ourselves on having a team of trained, experienced, and dedicated educators who are passionate about early childhood development. Our teachers understand the importance of personalized attention and ensure that each child learns at their own pace while being gently encouraged to explore their potential.</p>
+                    <h5>Strong Parent–Teacher Partnership</h5>
+                    <p>We value open communication and collaboration with parents. Through regular updates, meetings, and progress reports, we ensure families are informed and involved every step of the way. Together, we create a strong support system for your child’s development.</p>
+                </div>
+            </div>
+        </div>
+      
+{% endblock %}

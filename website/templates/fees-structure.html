@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% block content %}
+
+{% load static %}
+ <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">Fees Structure</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a  href="{%url 'home'%}">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Fees Structure</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <div class="container-xxl py-12">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <h1 class="mb-4">Fees Structure Requirements</h1>
+                    <p>The school operates a clear and transparent fees structure that is provided to parents and guardians upon pupil registration. This ensures that all families are well informed about tuition fees and any related charges before learning begins. The fees are structured to support quality education, learning materials, and the overall welfare of the pupils, while remaining fair and manageable for parents.</p>
+                    <h6 class="mb-4">Fees Structure </h6>
+                    <p>Our fees structure comprises of both optional and mandootry voteheads as shown below</p>
+                   
+                        <ul> 
+                            <strong><li>Lunch</li></strong>
+                            <p>Lunch at the school is optional for Learners. Learners who enroll in the school lunch program are provided with nutritious meals prepared in a clean and safe environment. Packed meals from home are <b>not allowed</b>, ensuring consistency in nutrition, hygiene, and the overall well-being of all learners.
+                            </p>
+                        </ul>
+                    
+                        <ul>
+                             <strong>
+                            <li>Transport</li>
+                            <ol>Town Route</ol>
+                            <ol>Ogongo Route</ol>
+                            <ol>Rodi Route</ol>
+                             </strong>
+                             <p>School transport is optional and available for pupils whose parents or guardians wish to use this service. The transport system is designed to be safe, reliable, and convenient, ensuring that students travel comfortably to and from school. Parents who prefer to make their own arrangements for getting their children to school are welcome to do so</p>
+                        </ul>
+                   
+             </div>
+         </div>
+    </div>
+</div>
+{% endblock %}
